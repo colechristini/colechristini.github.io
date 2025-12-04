@@ -1,0 +1,36 @@
+---
+layout: default
+---
+<h1>{{ page.title }}</h1>
+<p class="subtitle">{{ page.date | date: "%B %-d, %Y" }}</p>
+
+{{ content }}
+
+<section>
+  <div style="clear: both"></div>
+
+  {%- assign post_type = page.type | default: nil -%}
+  {%- assign type_page = nil -%}
+
+  {%- if post_type -%}
+    {%- assign slug = "/" | append: post_type | downcase | append: "/" -%}
+
+    {%- for p in site.pages -%}
+      {%- if p.url == slug -%}
+        {%- assign type_page = p -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endif -%}
+
+  {%- if type_page -%}
+    <p class="backarrow">
+      <a href="{{ type_page.url | relative_url }}">← Back to {{ post_type | capitalize }}s</a>
+    </p>
+  {%- else -%}
+    <p class="backarrow">
+      <a href="{% link types/index.md %}">← Back to all posts</a>
+    </p>
+  {%- endif -%}
+
+</section>
+

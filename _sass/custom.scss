@@ -1,0 +1,88 @@
+/* Grid layout: left TOC, main content, right sidenotes */
+.content-wrapper {
+  display: grid;
+  grid-template-columns: 220px 1fr 220px;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* Centered post title */
+.post-title {
+  text-align: center;
+  font-family: "ETBembo", Georgia, serif;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+}
+
+/* Main content column */
+.post-content {
+  font-family: "ETBembo", Georgia, serif;
+  line-height: 1.65;
+}
+
+/* Back arrow style */
+.backarrow a {
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #555;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+/* Left TOC */
+.toc-sidenote {
+  font-size: 0.9rem;
+  font-family: "ETBembo", Georgia, serif;
+}
+
+/* TOC styling */
+.toc {
+  border-left: 3px solid #ddd;
+  padding-left: 10px;
+  background: #fdfdfd;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+}
+
+.toc ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.toc .lvl-2 {
+  margin-left: 0;
+  margin-bottom: 0.5rem;
+}
+
+.toc .lvl-3 {
+  margin-left: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.toc a.active {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #111;
+}
+
+/* Right sidenotes column */
+.right-sidenotes {
+  position: relative;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 900px) {
+  .content-wrapper {
+    display: block;
+  }
+  .toc-sidenote {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .right-sidenotes {
+    display: none;
+  }
+}

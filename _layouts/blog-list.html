@@ -1,0 +1,67 @@
+---
+layout: default
+title: blog
+full_width: true
+---
+
+{% assign requested_type = page.type | default: nil %}
+
+{% if requested_type %}
+  {% assign posts = site.posts | where: "type", requested_type %}
+{% else %}
+  {% assign posts = site.posts %}
+{% endif %}
+
+<h1>{{ page.title }}</h1>
+<p class=subtitle>{{ site.author }}</p>
+
+{{ content }}
+
+{%- assign requested_type = page.type | default: nil -%}
+
+{%- if requested_type -%}
+  {%- assign posts = site.posts | where: "type", requested_type -%}
+{%- else -%}
+  {%- assign posts = site.posts -%}
+{%- endif -%}
+
+{%- if posts.size > 0 -%}
+
+{%- assign prevyear = "" -%}
+
+{%- for post in posts -%}
+  {%- assign currentyear = post.date | date: "%Y" -%}
+
+  {%- if currentyear != prevyear -%}
+    {% unless forloop.first %}
+</ul>
+    {% endunless %}
+
+<h2 id="{{ currentyear }}">{{ currentyear }}</h2>
+<ul>
+
+    {%- assign prevyear = currentyear -%}
+  {%- endif -%}
+
+  <li>
+    <p>
+      <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      —
+      <span style="font-style: italic">{{ post.date | date: '%B %-d' }}</span>
+
+      {%- if post.type and requested_type == nil -%}
+        <!-- show type label only on the all-posts page -->
+        <span class="marginnote">( {{ post.type }} )</span>
+      {%- endif -%}
+    </p>
+  </li>
+
+  {%- if forloop.last -%}
+</ul>
+  {%- endif -%}
+
+{%- endfor -%}
+
+{%- else -%}
+<p>Watch this space for the first post!</p>
+{%- endif -%}
