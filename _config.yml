@@ -1,0 +1,13 @@
+title: "My Tufte Site"
+description: "A GitHub Pages site built with Jekyll 4.3 and jekyll-theme-tufte"
+
+theme: jekyll-theme-tufte
+markdown: kramdown
+
+plugins:
+  - jekyll-theme-tufte
+  # - jekyll-feed
+  # - jekyll-seo-tag
+
+# Optional
+# permalink: /:title/
