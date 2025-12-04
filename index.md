@@ -3,8 +3,14 @@ layout: page
 title: Home
 ---
 
-# Welcome to Tufte + Jekyll 4.3
+# Welcome
 
-Here is a sidenote:
+This site uses the **Tufte Jekyll theme** with GitHub Actions and Jekyll 4.3.
 
-<span class="sidenote">This is a proper Tufte-style sidenote.</span>
+Here is a sidenote, using Tufte's spacing:
+
+<span class="sidenote">This is a Tufte-style sidenote.</span>
+
+And a margin note example:
+
+<span class="marginnote">This is a margin note.</span>
