@@ -86,3 +86,27 @@
     display: none;
   }
 }
+
+.blog-list-description {
+  font-style: italic;
+  opacity: 0.8;
+}
+
+.post-description {
+  font-style: italic;
+  opacity: 0.85;
+  font-size: 0.95rem;
+  margin-top: -0.5rem;
+}
+
+body {
+  font-family: "Spectral", serif;
+  // line-height: 1.6;
+  // font-size: 18px;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Spectral", serif; /* optional if you want titles in Spectral too */
+  letter-spacing: -0.5px;
+}

@@ -13,7 +13,10 @@ full_width: true
 {% endif %}
 
 <h1>{{ page.title }}</h1>
-<p class=subtitle>{{ site.author }}</p>
+<!-- <p class=subtitle>{{ site.author }}</p> -->
+{% if page.description %}
+  <p class="blog-list-description">{{ page.description }}</p>
+{% endif %}
 
 {{ content }}
 
@@ -53,8 +56,12 @@ full_width: true
         <!-- show type label only on the all-posts page -->
         <span class="marginnote">( {{ post.type }} )</span>
       {%- endif -%}
+      {% if post.description %}
+        <p class="post-description">{{ post.description }}</p>
+      {% endif %}
     </p>
   </li>
+  
 
   {%- if forloop.last -%}
 </ul>

@@ -1,5 +1,5 @@
 ---
 layout: blog-list
-title: All writings
+title: All Writing
 weight: 2
 ---
