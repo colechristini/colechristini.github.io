@@ -1,5 +1,7 @@
-title: "My Tufte Site"
-description: "A GitHub Pages site built with Jekyll 4.3 and jekyll-theme-tufte"
+title: "colechristini"
+description: "Cole Christini's Personal Website"
+author: Cole Christini
+
 
 theme: jekyll-theme-tufte
 markdown: kramdown
