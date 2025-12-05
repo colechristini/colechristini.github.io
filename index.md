@@ -7,7 +7,7 @@ Currently a senior studying Computer Science & History at Carnegie Mellon. My in
 
 I also like to read (sci-fi and nonfiction), explore new places, eat good food, play soccer (not horribly) and tennis (horribly).
 
-This site is mostly for me to document my thoughts on things I read/see as well as projects I work on.
+This site is mostly for me to document my thoughts on things I read/see as well as projects I work on. Inspired (both structurally and in the things I aspire to write) by [Yuxi on the Wired](https://yuxi.ml/). 
 
 ## things i'm doing:
 - will be joining SHV as a Codepoint fellow.
