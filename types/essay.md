@@ -1,6 +1,6 @@
 ---
 layout: blog-list
-title: Essays
+title: essays
 type: essay
 weight: 2
 permalink: /essay/
