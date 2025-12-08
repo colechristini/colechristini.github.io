@@ -8,13 +8,11 @@
 	{% endif %}
 
   <nav class="group">
-    <ul>
-    {%- assign pg = site.pages | sort: "weight" | reverse %}
-    <li>
-      <a class="site-title" rel="author" href="{{ "/" | relative_url }}"
+    <a class="site-title" rel="author" href="{{ "/" | relative_url }}"
       {%- if page.url == "/" %} class="active" {% endif -%}>
        {{ site.title | escape }} </a>
-    </li>
+    <ul>
+    {%- assign pg = site.pages | sort: "weight" | reverse %}
     {%- for node in pg %}
       {%- if node.nav_exclude or node.url contains ".css" or node.url contains ".scss" %}
         {%- continue %}

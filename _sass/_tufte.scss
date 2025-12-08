@@ -6,15 +6,80 @@ html {
 }
 
 body {
-    width: 87.5%;
+    // width: 87.5%;
     margin: auto;
     margin: auto;
-    padding-left: 12.5%;
+    box-sizing: border-box;
+    // padding-left: 12.5%;
+    // padding-right: 12.5%;
+    
     // font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
     background-color: #fffff8;
     color: #111;
     max-width: 1400px;
     counter-reset: sidenote-counter;
+}
+
+.page-title {
+  width: 87.5%;
+  margin: 0;
+  padding-left: 12.5%;
+  // padding-right: 12.5%;
+  box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page-title > h1 {
+  margin-top: 6rem;
+}
+.page-title > subtitle {
+  text-align: center;
+}
+
+.post-footer {
+  padding-left: 20%;
+}
+
+
+.page-content {
+  width: 100%;
+  margin: 0;
+  padding-left: 20%;
+  padding-right: 20%;
+  box-sizing: border-box;
+}
+
+.list-title {
+  width: 87.5%;
+  margin: 0;
+  padding-left: 12.5%;
+  // padding-right: 12.5%;
+  box-sizing: border-box;
+}
+.list-title > h1 {
+  margin-top: 6rem;
+}
+
+.list-content {
+  width: 87.5%;
+  margin: 0;
+  padding-left: 12.5%;
+  // padding-right: 12.5%;
+  box-sizing: border-box;
+}
+
+/* Fix: ensure subtitle paragraphs inside `.page-title` are full-width
+     blocks and centered. The theme sets `article p` to 55% wide which
+     makes these `<p>` blocks narrow and left aligned; force them to
+     occupy the full title column and center their inline text. */
+.page-title p.subtitle,
+.page-title > .subtitle {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 /* Adds dark mode */
@@ -31,6 +96,7 @@ h1 {
     margin-bottom: 1.5rem;
     font-size: 3.2rem;
     line-height: 1;
+    // text-align: center;
 }
 
 h2 {
@@ -68,6 +134,7 @@ p.subtitle {
     font-size: 1.8rem;
     display: block;
     line-height: 1;
+    text-align: center;
 }
 
 .numeral {
@@ -98,7 +165,7 @@ ul {
 p {
     margin-top: 1.4rem;
     margin-bottom: 1.4rem;
-    padding-right: 0;
+    // padding-right: 12.5%;
     vertical-align: baseline;
 }
 
@@ -145,6 +212,25 @@ section > p,
 section > footer,
 section > table {
     width: 55%;
+}
+
+/* When page content is wrapped with `.page-content`, make section-level
+   elements use the full available column instead of the narrower 55% that
+   the theme assumes for centered text. This lets the body text fill the
+   column when additional left padding is applied via `.page-content`. */
+.page-content section > p,
+.page-content section > footer,
+.page-content section > table {
+    width: 100%;
+}
+
+/* Likewise make lists and definition lists fill the column inside
+   `.page-content`. */
+.page-content section > dl,
+.page-content section > ol,
+.page-content section > ul {
+    width: 100%;
+    -webkit-padding-start: 0;
 }
 
 /* 50 + 5 == 55, to be the same width as paragraph */
@@ -239,8 +325,8 @@ img {
 .marginnote {
     float: right;
     clear: right;
-    margin-right: -60%;
-    width: 50%;
+    margin-right: -37.5%;
+    width: 35%;
     margin-top: 0.3rem;
     margin-bottom: 0;
     font-size: 1.1rem;

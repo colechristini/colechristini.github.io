@@ -2,7 +2,7 @@
 layout: blog-list
 title: essays
 type: essay
-weight: 2
+weight: 0
 permalink: /essay/
-description: Long-form
+description: Long(ish) thoughts on various topics.
 ---

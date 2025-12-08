@@ -27,6 +27,15 @@ footer {
     footer { width: 100%; }
 }
 
+/* When page content is wrapped in `.page-content`, let top-level article
+   elements fill the available column (override the 55% article rule). */
+.page-content {
+  p, li, footer, table {
+    width: 100%;
+    padding-right: 0;
+  }
+}
+
 
 /* Back home link */
 p.backarrow {
@@ -46,15 +55,21 @@ nav.group a.active { font-weight: bold; }
   margin-left: 0rem;
   margin-right: 2rem;
 }
+header {
+  margin:auto;
+  width: 87.5%;
+  box-sizing: border-box;
+  // padding-right: 12.5%;
+}
 
 header > nav ul {
   list-style-type: none;
-  margin: 0;
+  margin-right: -2rem;
   padding: 0;
 }
 header > nav a {
-  font-size: 1.35rem;
-  letter-spacing: 0.15em;
+  font-size: 1.3rem;
+  letter-spacing: 0.14em;
   // text-transform: uppercase;
   color: $contrast-color;
   text-decoration: none;
@@ -64,7 +79,7 @@ header > nav a {
   float: right;
   margin-top: 0;
   margin-bottom: 0;
-  margin-left: 2rem;
+  margin-left: 1.5rem;
   margin-right: 0rem;
   margin-top: 1.5rem;
   padding-right: 0;
@@ -74,6 +89,11 @@ header > nav li:last-child a {
   margin-left: inherit;
   margin-right: inherit;
 }
+
+header > nav li:first-child a {
+  margin-right: 0;
+}
+
 header > nav a img{
   height: 5rem;
   position: relative;

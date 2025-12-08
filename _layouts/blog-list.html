@@ -11,9 +11,11 @@ full_width: true
 {% else %}
   {% assign posts = site.posts %}
 {% endif %}
-
+<main class="list-title">
 <h1>{{ page.title }}</h1>
+</main>
 <!-- <p class=subtitle>{{ site.author }}</p> -->
+<main class="list-content">
 {% if page.description %}
   <p class="blog-list-description">{{ page.description }}</p>
 {% endif %}
@@ -72,3 +74,4 @@ full_width: true
 {%- else -%}
 <p>Watch this space for the first post!</p>
 {%- endif -%}
+</main>
