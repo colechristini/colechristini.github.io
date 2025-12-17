@@ -4,5 +4,5 @@ title: notes
 type: notes
 weight: 1
 permalink: /notes/
-description: Short thoughts on various things.
+description: Short thoughts on various topics.
 ---

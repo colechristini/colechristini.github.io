@@ -4,9 +4,9 @@ title: about
 weight: 4
 ---
 
-Currently a senior studying Computer Science & History at Carnegie Mellon. My interests are in parallel algorithms, ML (systems), and drug discovery. I enjoy thinking about algorithmic challenges and how to write fast & elegant code. 
+Currently a senior studying Computer Science & History at Carnegie Mellon. My interests are in parallel algorithms, ML (systems), and drug discovery. I enjoy thinking about how to solve hard problems with both classical and ML methods.
 
-I also like to read (sci-fi and nonfiction), explore new places, eat good food, and play soccer (not horribly) and tennis (horribly).
+Outside of directly work-relevant interests, I love to read, especially sci-fi, history, and essays on various topics. I also enjoy exploring new places and traveling, eating (and cooking) good food, and playing soccer and tennis. 
 
 ## things i'm doing:
 - will be joining SHV as a Codepoint fellow. Planning to work on ML research at various startups.
