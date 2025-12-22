@@ -21,10 +21,11 @@ body {
 }
 
 .page-title {
-  width: 87.5%;
+  width: 100%;
   margin: 0;
-  padding-left: 12.5%;
-  // padding-right: 12.5%;
+  padding-left: 22.5%;
+  padding-right: 22.5%;
+  line-height: 1.6;
   box-sizing: border-box;
     text-align: center;
     display: flex;
@@ -37,6 +38,7 @@ body {
 }
 .page-title > subtitle {
   text-align: center;
+  line-height: 1.6;
 }
 
 .post-footer {
@@ -47,9 +49,10 @@ body {
 .page-content {
   width: 100%;
   margin: 0;
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 22.5%;
+  padding-right: 22.5%;
   box-sizing: border-box;
+  text-align: justify;
 }
 
 .list-title {
@@ -64,7 +67,7 @@ body {
 }
 
 .list-content {
-  width: 87.5%;
+  width: 100%;
   margin: 0;
   padding-left: 20%;
   padding-right: 20%;
@@ -131,9 +134,9 @@ p.subtitle {
     font-style: italic;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     display: block;
-    line-height: 1;
+    line-height: 1.25;
     text-align: center;
 }
 
@@ -159,7 +162,7 @@ dl,
 ol,
 ul {
     font-size: 1.4rem;
-    line-height: 2rem;
+    line-height: 2;
 }
 
 p {
@@ -326,13 +329,14 @@ img {
     float: right;
     clear: right;
     margin-right: -37.5%;
-    width: 35%;
+    width: 30%;
     margin-top: 0.3rem;
     margin-bottom: 0;
     font-size: 1.1rem;
     line-height: 1.3;
     vertical-align: baseline;
     position: relative;
+    text-align: left;
 }
 
 .sidenote-number {
