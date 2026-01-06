@@ -55,6 +55,10 @@ body {
   text-align: justify;
 }
 
+.page-content > h1 {
+  font-size: 2.8rem;
+}
+
 .list-title {
   width: 87.5%;
   margin: 0;
@@ -103,7 +107,7 @@ h1 {
 }
 
 h2 {
-    font-style: italic;
+    // font-style: italic;
     font-weight: 400;
     margin-top: 2.1rem;
     margin-bottom: 1.4rem;
