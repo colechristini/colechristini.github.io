@@ -534,4 +534,27 @@ label.margin-toggle:not(.sidenote-number) {
     img {
         width: 100%;
     }
+
+    /* Mobile-specific overrides for page layout to match site-wide
+       body padding and prevent excessive right-padding that breaks
+       column flow on narrow screens. */
+    .page-content {
+        width: 100%;
+        padding-left: 8%;
+        padding-right: 8%;
+        box-sizing: border-box;
+    }
+
+    /* Ensure page title block doesn't get horizontally offset on mobile */
+    .page-title {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        box-sizing: border-box;
+        align-items: center;
+    }
+
+    .page-title > h1 {
+        margin-top: 3rem;
+    }
 }
