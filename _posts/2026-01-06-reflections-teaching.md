@@ -18,7 +18,7 @@ For a programming class, however, things that have already been eroded are most 
 
 These abilities make LLMs a fantastic tool for learning. Equally, however, they make them a danger to students. 
 
-# How Students Misuse AI
+## How Students Misuse AI
 15-210 is a core class. Every undergraduate in the School of Computer Science, no matter their major (CS, AI, Robotics, etc.) and every CS minor takes the class. With that comes a number of students who have no interest in the course content, and so are much likelier to try and automate away as much of their work as possible. 
 
 When asked, many of those students will say that they use AI to help them debug or write test cases. Others will say that they use it for conceptual understanding. All of those things are probably true. Certainly, it gets used to automate the busywork of writing test cases, as well as to identify arcane errors in hard-to-read SML code rather than having TAs help with that. No students, however, will admit that they upload the handout into ChatGPT or Claude and ask it to spit out a complete solution. Even though students are permitted to do so, there is still a degree of stigma around 'cheating' your way through your classes. This isn't the case in every class. In some, students regard AI as a 'magic bullet' for completing homework quickly and with only a modicum of effort. {% sidenote 'teaching-cs' '[How Do You Teach Computer Science in the A.I. Era?](https://www.nytimes.com/2025/06/30/technology/computer-science-education-ai.html), Steve Lohr, The New York Times.' %}
@@ -30,14 +30,14 @@ They do so because students are **students**. Inherent to being a student is a l
 
 Equally, students are unqualified to determine how to use LLMs in their classes in a way that benefits their learning. Certainly, they can choose to not use them at all. Many, however, will not choose to do that. They use LLMs to minimize their work, rather than as the tool they can be.
 
-# AI As A Tool In CS Courses
+## AI As A Tool In CS Courses
 How might we want our students to use AI, then? The easy answer is not at all, but I think that ignores the reality of the present day. The wave of agentic coding tools and coding models in general seems to be antithetical to the purpose of (some) CS classes. For an algorithms class where the programs are relatiely small and self-contained, there's no way to use a LLM to code a substantial part without that substantial part being the entire assignment. Clearly, then, coding is not how we would like our students to use these models.
 
 Many of my students say that they use these tools to help debug and write test cases. Generating test cases is a perfectly fine use case, but debugging seems to me a slippery slope. First and foremost, using AI to debug is not that many steps away from using AI to write the code, especially if the initial implementation is very incorrect. Having a LLM rewrite your broken logic is not, in the end, all that different from having a LLM write the logic in the first place. A LLM is also not going to help debug in the way a TA might, prompting the student to reason about their code to further their own learning, In an ideal world, helping a student fix their code in office hours is a conversation between student and TA, where the TA prompts the student towards the problem rather than simply fixing their code. 
 
 The most commonly proposed way to use AI to assist in learning is to help with conceptual understanding, acting as a 24/7 TA that can instantly respond to questions and elaborate upon concepts. If this were the main way students used AI, this would be a net-positive for student understanding. This is the way we encourage our students to use AI, and many say this is how they use it. Both personal experience and office hours attendance, however, suggests it is the ways mentioned above as well. Given that many students are using it in ways that are both potentially harmful to their learning, and also to create work that is not their own, the way classes are structured has been forced to change.
 
-# How To Structure Classes Today
+## How To Structure Classes Today
 In the past, CS classes at CMU have focused heavily on homeworks, with the idea that we can ask far more complicated questions there than we could ever ask on an exam or quiz. It was harder for students to cheat, if only because Chegg only had answers to old homeworks, and thus new questions were temporarily safe. Of course, students could still ask each other for answers or for help, but that was mostly fine—most students would still at least attempt it on their own, and ask their friends for help when needed. Because we could trust that a student's work was mostly their own, we got a lot of signal from how they did on it, allowing us to allocate a large portion of the grade to those homework assignments.
 
 LLMs have flipped that model on its head. When students have instant, accurate answers at their fingertips that are not identical to past answers, it becomes impossible to extract signal from ChatGPT-generated noise. This forces the portion of the grade that was allocated to homeworks and other, similar non-proctored settings to be moved to proctored settings. 
@@ -50,7 +50,7 @@ While this may be the best option, it is in my eyes the best of bad options. It 
 
 For some classes, this shift is not practical. Systems classes and project based classes in general cannot shift as easily to having the majority of the course be proctored, because the homeworks **are the point** rather than just being an environment to learn a way of thinking or set of discrete skills. 
 
-# Final Thoughts
+## Final Thoughts
 It's possible to restructure our courses to teach the same skills, and get signal from students' outputs in order to fairly assign grades. There is a broader question, however: whether we **should** be teaching the same skills anyways. Many people, students in particular, say no. They argue that we should teach classes with AI, because that's the way of the future. If software is to be written mostly by agentic coding tools, in their view, why do they need to study theory? 
 
 I'd argue that they need to study it to understand the code being written, and to push the cutting edge. AI is great at generating boilerplate and simple apps. It's not great at designing end-to-end systems, or optimizing at the tail end of performance requirements today. It likely will get very good at that. More importantly though is that future developers **must** be able to understand what their code is doing and **why**. By 'why', I mean why a certain data structure or algorithm was chosen, and what tradeoffs or failure modes that choice may have. Just like treating an LLM  as a black box is dangerous, treating the code that it writes as one is too.
