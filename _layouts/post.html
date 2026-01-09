@@ -7,9 +7,19 @@ layout: default
 <p class="subtitle">{{ page.date | date: "%B %-d, %Y" }}</p>
 </main>
 
-<main class="page-content">
+<div class="content-wrapper">
+  <aside class="toc">
+    <nav class="toc-list" aria-label="Table of contents"></nav>
+  </aside>
+
+  <main class="post-content">
     {{ content }}
-</main>
+  </main>
+
+  <aside class="right-sidenotes">
+    <!-- reserved for sidenotes/figures -->
+  </aside>
+</div>
 
 <section>
   <main class="post-footer">
@@ -40,4 +50,6 @@ layout: default
   </main>
 
 </section>
+
+<script src="{{ "/assets/js/toc.js" | relative_url }}"></script>
 
