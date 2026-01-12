@@ -1,2 +1,4 @@
 _site
 .jekyll-cache
+.github/copilot-instructions.md
+AGENTS.md
