@@ -7,9 +7,9 @@ nav_exclude: true
 
 
 # on[...]
-This blog is mostly a place for me to jot
+This blog is mostly a place for me to jot down thoughts on various topics as well as research I do.
 
 Inspired by (or perhaps aspirng to be like) [Yuxi on the Wired](https://yuxi.ml/), as well as the Thinking Machines blog. Named after the Pocket Perspectives series from Thames & Hudson.
 
-If (for some odd reason) you want to know more about me, see the [readme](colechristini.github.io/readme).
+For more about me see the [readme](colechristini.github.io/readme).
 
