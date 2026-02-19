@@ -14,4 +14,4 @@ plugins:
   - jekyll-seo-tag
 
 # Optional
-# permalink: /:title/
+permalink: pretty
