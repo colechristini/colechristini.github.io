@@ -7,7 +7,7 @@ weight: 4
 I'm a senior studying Computer Science & History at Carnegie Mellon. My interests are in parallel algorithms, ML (systems), and drug discovery. I enjoy thinking about how to solve hard problems with both classical and ML methods.  
 
 ## research interests
-I'm currently interested in diffusion models, including improvements in few-/single-step methods and methods for representation learning/alignment, as well as 'design' of latent spaces for latent diffusion. I'm also interested in improvements and systems surrounding LoRA, including batch fine-tuning and dynamic-rank methods. I find problems in ML systems and parallel algorithms interesting as well.
+I'm currently interested in diffusion models, including improvements in few-/single-step methods and methods for representation learning/alignment. I'm also interested in improving methods for learning compressed representations, with applications towards improving latent diffusion for drug discovery and other hard tasks. I'm also interested in improvements and systems surrounding LoRA, including batch fine-tuning and dynamic-rank methods. I find problems in ML systems and parallel algorithms interesting as well.
 
 
 ## things i'm doing:
