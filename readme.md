@@ -7,14 +7,13 @@ weight: 4
 I'm a senior studying Computer Science & History at Carnegie Mellon. My interests are in parallel algorithms, ML (systems), and drug discovery. I enjoy thinking about how to solve hard problems with both classical and ML methods.  
 
 ## research interests
-I'm currently interested in diffusion models, including improvements in few-/single-step methods, methods for representation learning/alignment, and general methods for improving performance. I'm also interested in improvements and systems surrounding LoRA, including batch fine-tuning and dynamic-rank methods. I find problems in ML systems and parallel algorithms interesting as well.
+I'm currently interested in diffusion models, including improvements in few-/single-step methods and methods for representation learning/alignment, as well as 'design' of latent spaces for latent diffusion. I'm also interested in improvements and systems surrounding LoRA, including batch fine-tuning and dynamic-rank methods. I find problems in ML systems and parallel algorithms interesting as well.
 
 
 ## things i'm doing:
 - currently head TA of 15-210 at CMU (fall '24-present).
 
 ## things i've done:
-### at cmu & elsewhere:
 - won the Scott Krulcik Memorial Scholarship for my senior spring.
 - spent summer '25 at D.E. Shaw Research working on algorithms for searching trillion-scale chemical libraries. beat literature SoTA in 13 weeks.
 - did research in Jia Zhihao's group at CMU on the Mirage compiler. Designed novel method for partitioning operator graphs pre-compilation.
